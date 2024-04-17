@@ -37,7 +37,9 @@
         android:padding="10dp"
         android:textStyle="bold"
         android:backgroundTint="#d9cebb"
-        android:textColor="#821D30" >
+        android:textColor="#821D30"
+        android:onClick="onClickLogin">
+
     </Button>
 
     <Button
@@ -50,7 +52,8 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#d9cebb"
         android:textStyle="bold"
-        android:textColor="#821D30" >
+        android:textColor="#821D30"
+        android:onClick="onClickSignUp">
     </Button>
 
 </LinearLayout>
