@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="20dp"
     tools:context=".NumberPage">
 
@@ -26,13 +25,12 @@
     <Spinner
         android:id="@+id/spnMenu"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="53dp"
         android:layout_margin="20dp"
+        android:layout_marginTop="15dp"
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
-        android:textSize="30sp"
-        >
+        android:textSize="30sp">
 
     </Spinner>
 
