@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨Turkish Touch✨"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#821D30"
+        android:layout_marginTop="32dp" >
+    </TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/intro"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" >
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:backgroundTint="#d9cebb"
+        android:textColor="#821D30" >
+    </Button>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#d9cebb"
+        android:textStyle="bold"
+        android:textColor="#821D30" >
+    </Button>
+
+</LinearLayout>

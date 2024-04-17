@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨Turkish Touch✨"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#821D30"
+        android:layout_marginTop="30dp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:hint="ID" >
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:padding="10dp"
+        android:backgroundTint="#d9cebb"
+        android:textColor="#821D30"
+        android:textStyle="bold"
+        android:text="Start learn" >
+    </Button>
+
+</LinearLayout>
