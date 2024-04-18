@@ -21,7 +21,7 @@
     <string name="c_cevap_cami">C : Cevap, Cami \n يلفظ كحرف الجيم</string>
     <string name="al_mak_i_ek">Ç : Çalışmak, Çiçek \n يلفظ تش</string>
     <string name="d_d_rt_duman">D : Dört, Duman \n يلفظ كحرف الدال</string>
-    <string name="e_elma_ev">E : Elma, Ev \n بلفظ مثل الكسرة الخفيفة الممدودة</string>
+    <string name="e_elma_ev">E : Elma, Ev \n يلفظ مثل الكسرة الخفيفة الممدودة</string>
     <string name="f_f_r_n_fener">F : Fırın, Fener \n يلفظ كحرف الفاء</string>
     <string name="g_g_n_g_zl_k_n">G : Gün, Gözlük \n يلفظ كحرف ال چ</string>
     <string name="quiz_time">✨ Quiz Time ✨</string>
@@ -57,4 +57,17 @@
     <string name="hala_naunt_n">Hala\nAunt\nالعمة</string>
     <string name="day_nuncle_n">Dayı\nUncle\nالخال</string>
     <string name="teyze_naunt_n">Teyze\nAunt\nالخالة</string>
+    <string name="a_a_ya_n">Ğ : Ağaç, Yağ \n هذا الحرف لا يلفظ ولا يمكن أن يأتي في أول الكلمة</string>
+    <string name="h_hay_r_helikopter_n">H : Hayır, Helikopter \nيلفظ مثل حرف الهاء</string>
+    <string name="i_yi_kiz">I : Kış, Kırk</string>
+    <string name="stanbul_necek">İ : İstanbul, İnecek</string>
+    <string name="j_jandarma_judo_n">J : Jandarma, Judo \n يلفظ مثل حرف الجيم</string>
+    <string name="k_kalem_kedi_n">K : Kalem, Kedi \n يلفظ مثل حرف الكاف</string>
+    <string name="l_lamba_lale_n">L : Lamba, Lale \n يلفظ مثل حرف اللام</string>
+    <string name="m_masal_maymun_n">M : Masal, Maymun \n يلفظ مثل حرف الميم</string>
+    <string name="n_nar_ney_n">N : Nar, Ney \n يلفظ مثل حرف النون</string>
+    <string name="o_otomobil_orman_n">O : Otomobil, Orman \n يلفظ مثل حرف الواو</string>
+    <string name="renci_rdek">Ö : Öğrenci, Ördek</string>
+    <string name="p_papatya_pide_n">P : Papatya, Pide \n يلفظ مثل حرف الباء المخففة</string>
+    <string name="r_radyo_r_zgar_n">R : Radyo, Rüzgar \n يلفظ مثل حرف الراء</string>
 </resources>

@@ -134,7 +134,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ğ : Ağaç, Yağ"
+                android:text="@string/a_a_ya_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -147,7 +147,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="H : Hayır, Helikopter"
+                android:text="@string/h_hay_r_helikopter_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -160,7 +160,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="I : İyi, İkiz"
+                android:text="@string/i_yi_kiz"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -173,7 +173,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="İ : İstanbul, İnecek"
+                android:text="@string/stanbul_necek"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -186,7 +186,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="J : Jandarma, Judo"
+                android:text="@string/j_jandarma_judo_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -199,7 +199,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="K : Kalem, Kedi"
+                android:text="@string/k_kalem_kedi_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -212,7 +212,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="L : Lamba, Lale"
+                android:text="@string/l_lamba_lale_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -225,7 +225,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="M : Masal, Maymun"
+                android:text="@string/m_masal_maymun_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -238,7 +238,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="N : Nar, Ney"
+                android:text="@string/n_nar_ney_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -251,7 +251,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="O : Otomobil, Orman"
+                android:text="@string/o_otomobil_orman_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -264,7 +264,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ö : Öğrenci, Ördek"
+                android:text="@string/renci_rdek"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -277,7 +277,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="P : Papatya, Pide"
+                android:text="@string/p_papatya_pide_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"
@@ -290,7 +290,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="R : Radyo, Rüzgar"
+                android:text="@string/r_radyo_r_zgar_n"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 android:textColor="#821D30"

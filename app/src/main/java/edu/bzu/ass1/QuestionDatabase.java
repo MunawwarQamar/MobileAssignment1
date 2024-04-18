@@ -16,10 +16,10 @@ public class QuestionDatabase {
 
         tempList.add(new QuestionDatabase("Teyze", "Aunt", "Uncle", "Brother", "Sister", "Aunt"));
         tempList.add(new QuestionDatabase("Kardeş", "Sister", "Brother", "Mother", "Father", "Brother"));
-        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
-        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
-        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
-        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+        tempList.add(new QuestionDatabase("Dört", "Five", "Four", "one", "Seven", "Four"));
+        tempList.add(new QuestionDatabase("Anne", "Father", "Mother", "Brother", "Sister", "Mother"));
+        tempList.add(new QuestionDatabase("Turuncu", "Orange", "Blue", "Red", "Yellow", "Orange"));
+        tempList.add(new QuestionDatabase("Kahverengi", "Gold", "Brown", "Gray", "Yellow", "Brown"));
 
         questionList = new ArrayList<>(Collections.unmodifiableList(tempList));
     }
