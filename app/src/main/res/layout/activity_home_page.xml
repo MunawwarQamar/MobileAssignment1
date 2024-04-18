@@ -12,13 +12,13 @@
     tools:context=".HomePage">
 
     <LinearLayout
-        android:id="@+id/lyLetters"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
         android:layout_marginTop="10dp"
         android:background="#d9cebb"
+        android:onClick="onClickLetters"
         >
         <ImageView
             android:layout_width="60dp"
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Alphabets"
+            android:text="@string/alphabets"
             android:textSize="30sp"
             android:textColor="#821D30"
             android:textStyle="bold"
@@ -38,7 +38,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lyNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -46,6 +45,7 @@
         android:padding="16dp"
         android:layout_marginTop="10dp"
         android:background="#d9cebb"
+        android:onClick="onClickNumber"
         >
         <ImageView
             android:layout_width="60dp"
@@ -56,7 +56,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Numbers"
+            android:text="@string/numbers"
             android:textSize="30sp"
             android:textColor="#821D30"
             android:textStyle="bold"
@@ -65,7 +65,6 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/lyColor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -73,6 +72,7 @@
         android:padding="16dp"
         android:layout_marginTop="10dp"
         android:background="#d9cebb"
+        android:onClick="onClickColor"
         >
         <ImageView
             android:layout_width="60dp"
@@ -83,7 +83,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Colors"
+            android:text="@string/colors"
             android:textSize="30sp"
             android:textColor="#821D30"
             android:textStyle="bold"
@@ -91,7 +91,6 @@
         </TextView>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/lyFamily"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -99,6 +98,7 @@
         android:padding="16dp"
         android:layout_marginTop="10dp"
         android:background="#d9cebb"
+        android:onClick="onClickFamily"
         >
         <ImageView
             android:layout_width="60dp"
@@ -109,11 +109,36 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Family"
+            android:text="@string/family"
             android:textSize="30sp"
             android:textColor="#821D30"
             android:textStyle="bold"
             android:layout_marginStart="20dp" >
         </TextView>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="10dp"
+        android:background="#d9cebb"
+        android:onClick="onClickQuiz"
+        >
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/qiuz">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/quiz"
+            android:textColor="#821D30"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
 </LinearLayout>

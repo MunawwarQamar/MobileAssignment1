@@ -10,10 +10,9 @@
     tools:context=".SignUpPage">
 
     <TextView
-        android:id="@+id/textViewAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="✨Turkish Touch✨"
+        android:text="@string/turkish_touch"
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="#821D30"
@@ -21,64 +20,72 @@
     </TextView>
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/edtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
-        android:hint="Name" >
+        android:hint="@string/student_name" >
     </EditText>
 
     <EditText
-        android:id="@+id/editTextID"
+        android:id="@+id/edtID"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
-        android:hint="ID">
+        android:hint="@string/student_id">
     </EditText>
 
     <EditText
-        android:id="@+id/editTextSection"
+        android:id="@+id/edtSection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
-        android:hint="Section" >
+        android:hint="@string/section" >
 
     </EditText>
 
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
         android:inputType="textEmailAddress" >
     </EditText>
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/student_password"
         android:layout_marginTop="30dp"
         android:textSize="25sp"
         android:inputType="textPassword" >
     </EditText>
 
+    <EditText
+        android:id="@+id/edtConPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/confirm_password"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:inputType="textPassword" >
+    </EditText>
     <Button
-        android:id="@+id/buttonSignIn"
+        android:id="@+id/btnSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:textSize="30sp"
         android:backgroundTint="#d9cebb"
         android:textColor="#821D30"
-        android:text="Start learn"
+        android:text="@string/start_learn"
         android:textStyle="bold"
         android:padding="10dp">
     </Button>
-
 </LinearLayout>

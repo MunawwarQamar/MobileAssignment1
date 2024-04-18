@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Ass1</string>
+    <string name="turkish_touch">✨Turkish Touch✨</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_password">Student Password</string>
+    <string name="remember_password">Remember password</string>
+    <string name="start_learn">Start learn</string>
+    <string name="student_name">Student Name</string>
+    <string name="section">Section</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="alphabets">Alphabets</string>
+    <string name="numbers">Numbers</string>
+    <string name="colors">Colors</string>
+    <string name="family">Family</string>
+    <string name="quiz">Quiz</string>
 </resources>
