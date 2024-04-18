@@ -22,9 +22,9 @@ public class LoginPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+        setupViews();
         sharedPreferences = getSharedPreferences("UserData", Context.MODE_PRIVATE);
         loadPreferences();
-        setupViews();
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,26 +47,27 @@ public class LoginPage extends AppCompatActivity {
 
         if (inputID.equals(savedID) && inputPassword.equals(savedPassword)) {
             if (chk.isChecked()) {
-                saveLogin(inputID, inputPassword);
+                saveLoginDetails(inputID, inputPassword);
             } else {
-                clearLogin();
+                clearLoginDetails();
             }
             Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
              Intent intent = new Intent(this, HomePage.class);
              startActivity(intent);
+             finish();
         } else {
             Toast.makeText(this, "Invalid ID or password", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private void saveLogin(String id, String password) {
+    private void saveLoginDetails(String id, String password) {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("SavedID", id);
         editor.putString("SavedPassword", password);
         editor.apply();
     }
 
-    private void clearLogin() {
+    private void clearLoginDetails() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.remove("SavedID");
         editor.remove("SavedPassword");

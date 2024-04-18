@@ -7,7 +7,7 @@ import java.util.List;
 public class NumberDatabase {
     private List<Items> items= new ArrayList<Items>();
     public String[] getCategory(){
-        String[] categories= {"From 0 to 9","From 10 to 19","From 20 to 90","Hundreds","Thousand and above"};
+        String[] categories= {"From 0 to 9","From 10 to 19","From 20 to 90","Hundreds","Thousand and Above"};
         return categories;
     }
     public List<Items> getItems(String category){

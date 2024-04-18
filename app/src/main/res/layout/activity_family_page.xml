@@ -1,10 +1,178 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FamilyPage">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✨Family✨"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#821D30"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/anne_nmother_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/baba_nfather_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/o_ul_nson_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/karde_nbrother_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/k_z_karde_nsister_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dede_ngrandfather_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/b_y_kanne_ngrandmother_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/amca_nuncle_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hala_naunt_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/day_nuncle_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/teyze_naunt_n"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#821D30"
+                android:layout_gravity="center"
+                android:background="#d9cebb"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

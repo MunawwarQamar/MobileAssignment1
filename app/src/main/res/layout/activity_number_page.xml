@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="Determine what you need from the list: "
         android:textSize="30sp"
         android:textColor="#821D30"
@@ -25,11 +25,9 @@
     <Spinner
         android:id="@+id/spnMenu"
         android:layout_width="match_parent"
-        android:layout_height="53dp"
+        android:layout_height="62dp"
         android:layout_margin="20dp"
         android:layout_marginTop="15dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
         android:textSize="30sp">
 
     </Spinner>
@@ -54,7 +52,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
-        android:textSize="20sp"
-        >
-    </ListView>
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold"></ListView>
 </LinearLayout>

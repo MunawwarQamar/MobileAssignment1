@@ -9,10 +9,18 @@ public class QuestionDatabase {
 
     public QuestionDatabase() {
         ArrayList<QuestionDatabase> tempList = new ArrayList<>();
-        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
-        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
-        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
-        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
+        tempList.add(new QuestionDatabase("İki Yüz", "Two Hundred", "Twenty", "Twelve", "Two Thousand", "Two Hundred"));
+        tempList.add(new QuestionDatabase("Mor", "Green", "Red", "Black", "Purple", "Purple"));
+        tempList.add(new QuestionDatabase("Yüz Milyon", "One Hundred Thousand", "One Billion", "One Hundred Million", "Ten Thousand", "One Hundred Million"));
+        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+
+        tempList.add(new QuestionDatabase("Teyze", "Aunt", "Uncle", "Brother", "Sister", "Aunt"));
+        tempList.add(new QuestionDatabase("Kardeş", "Sister", "Brother", "Mother", "Father", "Brother"));
+        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+        tempList.add(new QuestionDatabase("Mavi", "Gold", "Blue", "Gray", "Yellow", "Blue"));
+
         questionList = new ArrayList<>(Collections.unmodifiableList(tempList));
     }
 

@@ -11,12 +11,23 @@
     android:layout_gravity="center"
     tools:context=".HomePage">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/turkish_touch"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#821D30"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp" >
+    </TextView>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="#d9cebb"
         android:onClick="onClickLetters"
         >
