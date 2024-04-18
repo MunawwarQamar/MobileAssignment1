@@ -1,31 +1,37 @@
 package edu.bzu.ass1;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class QuestionDatabase {
-    private String Question, option1,option2,option3,option4,rightOption;
-ArrayList<QuestionDatabase> questionList=new ArrayList<>();
-
+    private String question, option1, option2, option3, option4, rightOption;
+      final ArrayList<QuestionDatabase> questionList;
 
     public QuestionDatabase() {
-        questionList.add(new QuestionDatabase("","","","","",""));
+        ArrayList<QuestionDatabase> tempList = new ArrayList<>();
+        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
+        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
+        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
+        tempList.add(new QuestionDatabase("Sıfır", "One", "Five", "Zero", "Three", "Zero"));
+        questionList = new ArrayList<>(Collections.unmodifiableList(tempList));
     }
 
     public QuestionDatabase(String question, String option1, String option2, String option3, String option4, String rightOption) {
-        Question = question;
+        this.question = question;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
         this.option4 = option4;
         this.rightOption = rightOption;
+        this.questionList = null;
     }
 
     public String getQuestion() {
-        return Question;
+        return question;
     }
 
     public void setQuestion(String question) {
-        Question = question;
+        this.question = question;
     }
 
     public String getOption1() {
@@ -68,5 +74,7 @@ ArrayList<QuestionDatabase> questionList=new ArrayList<>();
         this.rightOption = rightOption;
     }
 
-
+    public ArrayList<QuestionDatabase> getQuestionList() {
+        return questionList;
     }
+}

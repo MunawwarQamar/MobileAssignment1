@@ -125,4 +125,15 @@ android:layout_gravity="center"
             >
         </Button>
     </LinearLayout>
+    <TextView
+        android:id="@+id/txtAns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        >
+    </TextView>
 </LinearLayout>

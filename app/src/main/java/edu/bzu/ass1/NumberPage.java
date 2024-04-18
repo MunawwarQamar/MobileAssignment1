@@ -19,7 +19,7 @@ import java.util.List;
 
 public class NumberPage extends AppCompatActivity {
     private Spinner spinner;
-    private ListView lstVeiw;
+    private ListView lstView;
     private Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class NumberPage extends AppCompatActivity {
                 Items[] arr = result.toArray(new Items[result.size()]);
                 ArrayAdapter<Items> adapter = new ArrayAdapter<Items>(NumberPage.this,
                         android.R.layout.simple_list_item_1, arr);
-                lstVeiw.setAdapter(adapter);
+                lstView.setAdapter(adapter);
 
 
             }
@@ -52,7 +52,7 @@ public class NumberPage extends AppCompatActivity {
     }
     private void setUpViews() {
         spinner =findViewById(R.id.spnMenu);
-        lstVeiw=findViewById(R.id.lstView);
+        lstView=findViewById(R.id.lstView);
         btn=findViewById(R.id.btnSearch);
     }
     private void populateSpinner() {

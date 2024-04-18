@@ -1,30 +1,61 @@
 package edu.bzu.ass1;
 
+import android.content.Context;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class SignUpPage extends AppCompatActivity {
+    private EditText edtName, edtID, edtSection, edtEmail, edtPassword, edtConPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_sign_up_page);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        Intent intent = new Intent(SignUpPage.this,HomePage.class);
-        startActivity(intent);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+     setupViews();
     }
 
+    private void setupViews() {
+        edtName = findViewById(R.id.edtName);
+        edtID = findViewById(R.id.edtID);
+        edtSection = findViewById(R.id.edtSection);
+        edtEmail = findViewById(R.id.edtEmail);
+        edtPassword = findViewById(R.id.edtPassword);
+        edtConPassword = findViewById(R.id.edtConPassword);
+    }
+    public void onClickGoHome(View view) {
+        saveUserData();
+         Intent intent = new Intent(this, HomePage.class);
+         startActivity(intent);
+         finish();
+    }
+
+    private void saveUserData() {
+        String name = edtName.getText().toString();
+        String id = edtID.getText().toString();
+        String section = edtSection.getText().toString();
+        String email = edtEmail.getText().toString();
+        String password = edtPassword.getText().toString();
+        String confirmPassword = edtConPassword.getText().toString();
+
+        // Check if the passwords match
+        if (!password.equals(confirmPassword)) {
+            Toast.makeText(this, "Passwords do not match", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        SharedPreferences sharedPreferences = getSharedPreferences("UserData", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("Name", name);
+        editor.putString("ID", id);
+        editor.putString("Section", section);
+        editor.putString("Email", email);
+        editor.putString("Password", password);
+        editor.apply();
+        Toast.makeText(this, "User data saved successfully", Toast.LENGTH_SHORT).show();
+    }
 }

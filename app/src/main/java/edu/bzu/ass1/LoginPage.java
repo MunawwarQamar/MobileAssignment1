@@ -1,80 +1,85 @@
 package edu.bzu.ass1;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import androidx.activity.EdgeToEdge;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class LoginPage extends AppCompatActivity {
-    public static final String ID = "ID" ;
-    public static final String PASS = "PASS";
-    public static final String FLAG = "FLAG";
-    private boolean flag = false;
-    private EditText edtId;
-    private EditText edtPassword;
+    private EditText edtID, edtPassword;
     private CheckBox chk;
-    private SharedPreferences prefs;
-    private SharedPreferences.Editor editor;
+    private Button btnSignIn;
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login_page);
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        sharedPreferences = getSharedPreferences("UserData", Context.MODE_PRIVATE);
+        loadPreferences();
         setupViews();
-        setupSharedPrefs();
-        checkPrefs();
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        btnSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login();
+            }
         });
     }
+
     private void setupViews() {
-        edtId = findViewById(R.id.edtID);
+        edtID = findViewById(R.id.edtID);
         edtPassword = findViewById(R.id.edtPassword);
         chk = findViewById(R.id.chk);
+        btnSignIn = findViewById(R.id.btnSignIn);
     }
-    private void setupSharedPrefs() {
-        prefs= PreferenceManager.getDefaultSharedPreferences(this);
-        editor = prefs.edit();
-    }
+        private void login() {
+        String savedID = sharedPreferences.getString("ID", "");
+        String savedPassword = sharedPreferences.getString("Password", "");
+        String inputID = edtID.getText().toString();
+        String inputPassword = edtPassword.getText().toString();
 
-    private void checkPrefs() {
-        flag = prefs.getBoolean(FLAG, false);
-
-        if(flag){
-            int id = prefs.getInt(ID ,0);
-            String password = prefs.getString(PASS, "");
-            edtId.setText(id);
-            edtPassword.setText(password);
-            chk.setChecked(true);
+        if (inputID.equals(savedID) && inputPassword.equals(savedPassword)) {
+            if (chk.isChecked()) {
+                saveLogin(inputID, inputPassword);
+            } else {
+                clearLogin();
+            }
+            Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show();
+             Intent intent = new Intent(this, HomePage.class);
+             startActivity(intent);
+        } else {
+            Toast.makeText(this, "Invalid ID or password", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void btnLoginOnClick(View view) {
-            int id =Integer.parseInt(edtId.getText().toString()) ;
-            String password = edtPassword.getText().toString();
+    private void saveLogin(String id, String password) {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("SavedID", id);
+        editor.putString("SavedPassword", password);
+        editor.apply();
+    }
 
-            if(chk.isChecked()){
-                if(!flag) {
-                    editor.putInt(ID, id);
-                    editor.putString(PASS, password);
-                    editor.putBoolean(FLAG, true);
-                    editor.commit();
-                }
-            }else
-                prefs.edit().clear().apply();
-        Intent intent = new Intent(LoginPage.this,HomePage.class);
-        startActivity(intent);
+    private void clearLogin() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.remove("SavedID");
+        editor.remove("SavedPassword");
+        editor.apply();
+    }
+
+    private void loadPreferences() {
+        String savedID = sharedPreferences.getString("SavedID", null);
+        String savedPassword = sharedPreferences.getString("SavedPassword", null);
+        if (savedID != null && savedPassword != null) {
+            edtID.setText(savedID);
+            edtPassword.setText(savedPassword);
+            chk.setChecked(true);
+        }
     }
 }
